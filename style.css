@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+section{
+    min-height: 100vh;
+}
+.logo{
+    width: 100%;
+    background: #192D3B;
+    height: 200px;
+    text-align: center;
+}
+.logo img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #192D3B;
+}
+
+/* FONT */
+h1{
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif; 
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+h2{
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+h3{
+    font-family: 'Crimson Text', serif;
+    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 200;
+}
+h4{
+    font-family: 'Crimson Text', serif;
+    font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 300;
+}
+p{
+    font-family: 'Crimson Text', serif;
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 300;
+}
+
+.container{
+    width: 100%;
+    background: #192D3B;
+    color: #fff;
+    margin: 2rem 0;
+    text-align: center;
+}
+.small{
+    padding: 1rem 0;
+}
+.big{
+    padding: 3rem 0;
+}
+.tiny{
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+}
+.m-2{
+    margin-top: 2rem;
+}
+.white{
+    margin: auto;
+    background: #fff;
+    color: #192D3B;
+    width: 200px;
+    transition: transform .2s;
+}
+.circles{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.fa-solid{
+    color: #192D3B;
+    font-size: 30px;
+    margin: 0 5px;
+}
+.title{
+    text-align: center;
+    color: #192D3B;
+}
+.flex{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+.flex .white{
+    margin: 0 3px;
+}
+.fa-down{
+    font-size: 100px;
+}
+.footer{
+    margin: 0;
+}
+.back{
+    width: 100%;
+    border: 3px solid #192D3B;
+    padding: 1rem 0;
+    text-align: center;
+    color: #192D3B;
+}
+.about .logo{
+    opacity: 0.3;
+    border: none;
+}
+.text{
+    padding: 3rem 0;
+}
+.products .text{
+    text-align: center;
+}
+.product-img img{
+    max-width: 100%;
+}
+.white:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@keyframes slide {
+    from {
+      transform: translate(0, -20px);
+    }
+    to {
+      transform: translate(0, -5px);
+    }
+  }
+.arrow{
+    width: 80px;
+    margin: auto;
+    animation: slide 1s linear infinite;
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    .footer .flex{
+        flex-direction: column;
+    }
+    .footer .flex .white{
+        margin: 5px 0;
+    }
+    .fa-solid{
+        font-size: 20px;
+    }
+    .logo{
+        height: 100px;
+    }
+}
